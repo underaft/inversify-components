@@ -8,32 +8,31 @@
     "dependecy injection"
   ],
   "main": "lib/inversify-components.js",
-  "typings": "./dts/inversify-components.d.ts",
+  "typings": "./lib/inversify-components.d.ts",
   "bugs": "https://github.com/webcomputing/inversify-components/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/webcomputing/inversify-components"
   },
   "peerDependencies": {
-    "inversify": "^5.0.1",
+    "inversify": "^5.1.1",
     "reflect-metadata": "^0.1.13"
   },
   "dependencies": {
     "debug": "^4.1.1"
   },
   "devDependencies": {
+    "eslint": "^7.29.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "@types/debug": "^4.1.5",
-    "gulp": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-tslint": "^8.1.4",
-    "gulp-typescript": "^5.0.1",
-    "inversify": "^5.0.1",
+    "inversify": "^5.1.1",
     "reflect-metadata": "^0.1.13",
-    "tslint": "^6.1.0",
-    "typescript": "^3.8.3"
+    "typescript": "^4.3.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json"
   },
   "author": "Antonius Ostermann <ostermann.antonius@gmail.com> (https://www.antonius-ostermann.de)",
   "license": "MIT"

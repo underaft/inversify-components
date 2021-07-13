@@ -1,0 +1,64 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "String": true,
+          "Boolean": true,
+          "Number": true,
+          "Symbol": true,
+          "{}": true,
+          "Object": true,
+          "object": false,
+          "Function": true
+        },
+        "extendDefaults": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": "error",
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "id-blacklist": [
+      "error",
+      "any",
+      "Number",
+      "number",
+      "String",
+      "string",
+      "Boolean",
+      "boolean",
+      "Undefined",
+      "undefined"
+    ],
+    "id-match": "error",
+    "no-eval": "error",
+    "no-redeclare": "error",
+    "no-var": "error"
+  }
+}
